@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: 'Dubrovinik';
+    src: url('dubrovnik-hill-regular-maisfontes.ded9/dubrovnik-hill-regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: 'Oriental';
+    src: url('oriental-1-maisfontes.0c65/oriental-1.ttf') format('truetype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #eecdce;
+    --cor1: #A41B20;
+    --cor2: #7A292B;
+    --cor3: #4F2829;
+    --cor4: #332223;
+    --cor5: #332B2B;
+
+    --fonte-padrao: 'Oriental', Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Dubrovinik', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+    margin: 10px;
+}
+header{
+    font-size: larger;
+    text-align: center;
+    
+}
+nav{
+    margin: auto;
+    background-color: antiquewhite;
+    text-align: center;
+
+}
+nav > a {
+    color: var(--cor5);
+    margin: 0px 30px; 
+    text-decoration: none;
+    font-size: 0.5em;
+}
+h1 {
+    margin-top: 20px;
+    padding: 10px;
+    font-family: var(--fonte-destaque);
+}
+main {
+    margin: auto;
+    width: 800px;
+
+}
+p {
+    text-indent: 30px;
+    text-align: justify;
+    margin-top: 10px;
+}
