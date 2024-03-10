@@ -80,13 +80,15 @@ footer{
     margin-top: 30px;
 }
 footer p {
+    font-size: larger;
     text-align: center;
     text-indent: 10px;
 }
-footer > a {
+footer > p > a {
     text-decoration: none;
     color: black;
 }
-footer > a:hover {
+footer > p > a:hover {
+    background-color: var(--cor5);
     text-decoration: underline;
 }
