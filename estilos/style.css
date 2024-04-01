@@ -1,67 +1,48 @@
 @charset "UTF-8";
 
-/* MOBILE FIRST */
+/* paleta de cores
+ Verde: #49a09d
+ Lilás: #5f2c82
+ */
 
-*{
-    padding: 0px;
+ *{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-body, html{
-    background-color: lightgray;
-}
-header{
-    background-color: rgb(128, 128, 128);
-}
-
-header > h1 {
-    padding: 10px;
-    text-align: center;
-}
-#burger {
-    background-color: rgb(48, 48, 48);
-    color: white;
+    padding: 0px;
+    box-sizing: border-box;
+ }
+ body, html{
+    background-color: #5f2c82;
+    height: 100vh;
+    width: 100vw;
+ }
+ main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+ }
+ section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.467);
+    transition: width .4s, height .4s;
+    transition-timing-function: ease;
+ }
+ section#login > div#imagem {
     display: block;
-    text-align: center;
+    background: #5f2c82 url(/imagens/pexels-david-underland-padroes.jpg) no-repeat;
+    background-size: cover;
+    height: 200px;
+ }
+ section#login > div#formulario {
+    display: block;
     padding: 10px;
-    cursor: pointer;
-}
-#burger:hover {
-    background-color: white;
-    color: black;
-}
-menu {
-    display: none;
-}
-menu > ul {
-    list-style-type: none;
-}
-menu > ul > li > a {
-    display:block;
-    padding: 10px;
-    text-decoration: none;
-    text-align: center;
-    background-color: rgb(87, 87, 87);
-    color: white;
-    border-top: 2px solid black;
-}
-menu > ul > li > a:hover {
-    background-color: grey;
-}
-main{
-    width:90vw;
-    background-color: white;
-    margin: auto;
-    margin-top: 10px;
-    padding: 10px;
-    border-radius: 10px;
-}
-article > h2 {
-    padding-bottom: 20px;
-}
-article > p {
-    text-align: justify;
-    margin-bottom: 20px;
-    text-indent: 20px;
-
-}
+ }
+ 
